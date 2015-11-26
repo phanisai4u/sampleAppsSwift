@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>TRACKING_ID</key>
-	<string>UA-70656949-2</string>
+	<string>GOOGLE_ANALYTICS_TRACKING_ID</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>mobileways.GoogleAnalyticsSampleSwift</string>
+	<string>YOUR_BUNDLE_ID</string>
 	<key>IS_ADS_ENABLED</key>
 	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -19,6 +19,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<false/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:129990824874:ios:dfcf9b2d4cb6c1c1</string>
+	<string>GOOGLE _ APP_IS</string>
 </dict>
 </plist>
