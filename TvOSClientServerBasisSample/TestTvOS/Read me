@@ -1,0 +1,6 @@
+Before run this project Setup sever in you mac 
+Follow these steps
+1. open terminal
+2. go to project directory
+3. type command $ $ python -m SimpleHTTPServer 9001
+then run your app in xcode
