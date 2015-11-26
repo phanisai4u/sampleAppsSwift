@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -19,8 +18,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-   
-   
+    
     
 
 }
@@ -43,11 +41,4 @@ extension ViewController : UITableViewDataSource{
         return cell
     }
     
-}
-extension ViewController : UITableViewDelegate{
-    //MARK: UITableViewDelegate
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 150
-    }
 }

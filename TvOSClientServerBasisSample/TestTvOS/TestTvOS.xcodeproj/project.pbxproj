@@ -14,6 +14,8 @@
 		E95012FD1C042C4B00810C64 /* TestTvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95012FC1C042C4B00810C64 /* TestTvOSTests.swift */; };
 		E95013081C042C4B00810C64 /* TestTvOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95013071C042C4B00810C64 /* TestTvOSUITests.swift */; };
 		E95013161C0431D700810C64 /* TVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95013151C0431D700810C64 /* TVTableViewCell.swift */; };
+		E964C1DB1C05C99400D62526 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = E964C1DA1C05C99400D62526 /* main.js */; };
+		E964C1DD1C05C9CA00D62526 /* main.tvml in Resources */ = {isa = PBXBuildFile; fileRef = E964C1DC1C05C9CA00D62526 /* main.tvml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E95013071C042C4B00810C64 /* TestTvOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTvOSUITests.swift; sourceTree = "<group>"; };
 		E95013091C042C4B00810C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E95013151C0431D700810C64 /* TVTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVTableViewCell.swift; sourceTree = "<group>"; };
+		E964C1DA1C05C99400D62526 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		E964C1DC1C05C9CA00D62526 /* main.tvml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.tvml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		E95012DE1C042C4A00810C64 = {
 			isa = PBXGroup;
 			children = (
+				E964C1DA1C05C99400D62526 /* main.js */,
+				E964C1DC1C05C9CA00D62526 /* main.tvml */,
 				E95012E91C042C4B00810C64 /* TestTvOS */,
 				E95012FB1C042C4B00810C64 /* TestTvOSTests */,
 				E95013061C042C4B00810C64 /* TestTvOSUITests */,
@@ -229,8 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E964C1DB1C05C99400D62526 /* main.js in Resources */,
 				E95012F21C042C4B00810C64 /* Assets.xcassets in Resources */,
 				E95012F01C042C4B00810C64 /* Main.storyboard in Resources */,
+				E964C1DD1C05C9CA00D62526 /* main.tvml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +486,7 @@
 				E950130E1C042C4B00810C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E950130F1C042C4B00810C64 /* Build configuration list for PBXNativeTarget "TestTvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +495,7 @@
 				E95013111C042C4B00810C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E95013121C042C4B00810C64 /* Build configuration list for PBXNativeTarget "TestTvOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +504,7 @@
 				E95013141C042C4B00810C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

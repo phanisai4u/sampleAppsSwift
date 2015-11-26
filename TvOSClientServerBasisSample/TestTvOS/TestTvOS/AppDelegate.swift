@@ -7,15 +7,30 @@
 //
 
 import UIKit
+import TVMLKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate{
 
     var window: UIWindow?
-
+  var appController: TVApplicationController?
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let appControllerContext = TVApplicationControllerContext()
+        if let javaScriptURL = NSURL(string:"http://localhost:9001/main.js") {
+            appControllerContext.javaScriptApplicationURL = javaScriptURL
+        }
+        appControllerContext.launchOptions["BASEURL"] = NSURL(string:"http://localhost:9001/main.js")
+        if let launchOptions = launchOptions as? [String: AnyObject] {
+            for (kind, value) in launchOptions {
+                appControllerContext.launchOptions[kind] = value
+            }
+        }
+        appController = TVApplicationController(context: appControllerContext, window: window, delegate: self)
+
         return true
     }
 
@@ -40,7 +55,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+   
 }
-
+extension AppDelegate : TVApplicationControllerDelegate {
+    
+    func appController(appController: TVApplicationController, didFinishLaunchingWithOptions options: [String: AnyObject]?) {
+        print("\(__FUNCTION__) invoked with options: \(options)")
+    }
+    
+    func appController(appController: TVApplicationController, didFailWithError error: NSError) {
+        print("\(__FUNCTION__) invoked with error: \(error)")
+        
+        let title = "Error Launching Application"
+        let message = error.localizedDescription
+        let alertController = UIAlertController(title: title, message: message, preferredStyle:.Alert )
+        self.appController?.navigationController.presentViewController(alertController, animated: true, completion: { () -> Void in
+            // ...
+        })
+    }
+    func appController(appController: TVApplicationController, didStopWithOptions options: [String: AnyObject]?) {
+        print("\(__FUNCTION__) invoked with options: \(options)")
+    }
+    
+    
+}
