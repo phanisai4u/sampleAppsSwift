@@ -1,0 +1,87 @@
+PODS:
+  - AWSAutoScaling (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSCloudWatch (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSCore (2.3.0)
+  - AWSDynamoDB (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSEC2 (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSElasticLoadBalancing (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSiOSSDKv2 (2.3.0):
+    - AWSiOSSDKv2/AutoScaling (= 2.3.0)
+    - AWSiOSSDKv2/AWSCore (= 2.3.0)
+    - AWSiOSSDKv2/CloudWatch (= 2.3.0)
+    - AWSiOSSDKv2/DynamoDB (= 2.3.0)
+    - AWSiOSSDKv2/EC2 (= 2.3.0)
+    - AWSiOSSDKv2/ElasticLoadBalancing (= 2.3.0)
+    - AWSiOSSDKv2/Kinesis (= 2.3.0)
+    - AWSiOSSDKv2/MobileAnalytics (= 2.3.0)
+    - AWSiOSSDKv2/S3 (= 2.3.0)
+    - AWSiOSSDKv2/SES (= 2.3.0)
+    - AWSiOSSDKv2/SimpleDB (= 2.3.0)
+    - AWSiOSSDKv2/SNS (= 2.3.0)
+    - AWSiOSSDKv2/SQS (= 2.3.0)
+  - AWSiOSSDKv2/AutoScaling (2.3.0):
+    - AWSAutoScaling (= 2.3.0)
+  - AWSiOSSDKv2/AWSCore (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSiOSSDKv2/CloudWatch (2.3.0):
+    - AWSCloudWatch (= 2.3.0)
+  - AWSiOSSDKv2/DynamoDB (2.3.0):
+    - AWSDynamoDB (= 2.3.0)
+  - AWSiOSSDKv2/EC2 (2.3.0):
+    - AWSEC2 (= 2.3.0)
+  - AWSiOSSDKv2/ElasticLoadBalancing (2.3.0):
+    - AWSElasticLoadBalancing (= 2.3.0)
+  - AWSiOSSDKv2/Kinesis (2.3.0):
+    - AWSKinesis (= 2.3.0)
+  - AWSiOSSDKv2/MobileAnalytics (2.3.0):
+    - AWSMobileAnalytics (= 2.3.0)
+  - AWSiOSSDKv2/S3 (2.3.0):
+    - AWSS3 (= 2.3.0)
+  - AWSiOSSDKv2/SES (2.3.0):
+    - AWSSES (= 2.3.0)
+  - AWSiOSSDKv2/SimpleDB (2.3.0):
+    - AWSSimpleDB (= 2.3.0)
+  - AWSiOSSDKv2/SNS (2.3.0):
+    - AWSSNS (= 2.3.0)
+  - AWSiOSSDKv2/SQS (2.3.0):
+    - AWSSQS (= 2.3.0)
+  - AWSKinesis (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSMobileAnalytics (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSS3 (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSSES (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSSimpleDB (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSSNS (2.3.0):
+    - AWSCore (= 2.3.0)
+  - AWSSQS (2.3.0):
+    - AWSCore (= 2.3.0)
+
+DEPENDENCIES:
+  - AWSiOSSDKv2
+
+SPEC CHECKSUMS:
+  AWSAutoScaling: df8e90e5a9a5bd2724498b9d6858666784ee8624
+  AWSCloudWatch: c1a3eb78ff4f288129e286d602e91e8a2914dfa9
+  AWSCore: dc200c885c9799f9f5d3ab9ec38a9c4b44d680f9
+  AWSDynamoDB: 015092431c25616fdc519186caa7a8802c053f42
+  AWSEC2: 9c29ffd73b9c58d6c6602640d617c67d2cd79095
+  AWSElasticLoadBalancing: c239907548fcdcd3faf3e54957c1c2542ccde026
+  AWSiOSSDKv2: 6e88ccbde54870c747739715b8503c3002f29ef7
+  AWSKinesis: cf1fd517a318d6f70b2b79816d77b3740480d494
+  AWSMobileAnalytics: 5e6809e6339a228bd096fadfb8ccc5491b168b11
+  AWSS3: 0185482a8136da9c7542a767567ee18106b38bca
+  AWSSES: 48424b2a92cd35571fe91f2a7e80dfce6f46e60d
+  AWSSimpleDB: 798c9515722d8abc37bb44414a3dea38a75df0e8
+  AWSSNS: 44257e7fbb51d9dea04994b39ff01dda61822643
+  AWSSQS: 260ffd6da0d2ab255b903b377f2baa1e7390b3ba
+
+COCOAPODS: 0.39.0

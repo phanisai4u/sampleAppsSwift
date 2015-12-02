@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9AA158A1C0EBCC600CC9DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA15891C0EBCC600CC9DD6 /* AppDelegate.swift */; };
+		E9AA158C1C0EBCC600CC9DD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA158B1C0EBCC600CC9DD6 /* ViewController.swift */; };
+		E9AA158F1C0EBCC600CC9DD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9AA158D1C0EBCC600CC9DD6 /* Main.storyboard */; };
+		E9AA15911C0EBCC600CC9DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9AA15901C0EBCC600CC9DD6 /* Assets.xcassets */; };
+		E9AA15941C0EBCC600CC9DD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9AA15921C0EBCC600CC9DD6 /* LaunchScreen.storyboard */; };
+		E9AA159F1C0EBCC600CC9DD6 /* SimpleDyanmoDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA159E1C0EBCC600CC9DD6 /* SimpleDyanmoDBTests.swift */; };
+		E9AA15AA1C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA15A91C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests.swift */; };
+		E9AA15B81C0EBF8E00CC9DD6 /* RowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA15B71C0EBF8E00CC9DD6 /* RowCell.swift */; };
+		E9AA15BA1C0EBFA700CC9DD6 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA15B91C0EBFA700CC9DD6 /* AddViewController.swift */; };
+		E9AA15BC1C0EBFB700CC9DD6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA15BB1C0EBFB700CC9DD6 /* Constants.swift */; };
+		E9AA15BE1C0EBFD900CC9DD6 /* DynamoDBMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA15BD1C0EBFD900CC9DD6 /* DynamoDBMapper.swift */; };
+		F67F2C1DC392CAD3318208BD /* libPods-SimpleDyanmoDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 883599752537214BBC686231 /* libPods-SimpleDyanmoDB.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9AA159B1C0EBCC600CC9DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9AA157E1C0EBCC600CC9DD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9AA15851C0EBCC600CC9DD6;
+			remoteInfo = SimpleDyanmoDB;
+		};
+		E9AA15A61C0EBCC600CC9DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9AA157E1C0EBCC600CC9DD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9AA15851C0EBCC600CC9DD6;
+			remoteInfo = SimpleDyanmoDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CC7A3065CCE32F41EA20271 /* Pods-SimpleDyanmoDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDyanmoDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleDyanmoDB/Pods-SimpleDyanmoDB.debug.xcconfig"; sourceTree = "<group>"; };
+		883599752537214BBC686231 /* libPods-SimpleDyanmoDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleDyanmoDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FBFB528DC5A2DDFDDF16D54 /* Pods-SimpleDyanmoDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDyanmoDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleDyanmoDB/Pods-SimpleDyanmoDB.release.xcconfig"; sourceTree = "<group>"; };
+		E9AA15861C0EBCC600CC9DD6 /* SimpleDyanmoDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDyanmoDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9AA15891C0EBCC600CC9DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9AA158B1C0EBCC600CC9DD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9AA158E1C0EBCC600CC9DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9AA15901C0EBCC600CC9DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9AA15931C0EBCC600CC9DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9AA15951C0EBCC600CC9DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9AA159A1C0EBCC600CC9DD6 /* SimpleDyanmoDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDyanmoDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9AA159E1C0EBCC600CC9DD6 /* SimpleDyanmoDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDyanmoDBTests.swift; sourceTree = "<group>"; };
+		E9AA15A01C0EBCC600CC9DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9AA15A51C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDyanmoDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9AA15A91C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDyanmoDBUITests.swift; sourceTree = "<group>"; };
+		E9AA15AB1C0EBCC600CC9DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9AA15B71C0EBF8E00CC9DD6 /* RowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowCell.swift; sourceTree = "<group>"; };
+		E9AA15B91C0EBFA700CC9DD6 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		E9AA15BB1C0EBFB700CC9DD6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E9AA15BD1C0EBFD900CC9DD6 /* DynamoDBMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoDBMapper.swift; sourceTree = "<group>"; };
+		E9AA15BF1C0EC37900CC9DD6 /* SimpleDynamoDB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleDynamoDB-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9AA15831C0EBCC600CC9DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67F2C1DC392CAD3318208BD /* libPods-SimpleDyanmoDB.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AA15971C0EBCC600CC9DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AA15A21C0EBCC600CC9DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002E720B1DE04D8CC5AA5BE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CC7A3065CCE32F41EA20271 /* Pods-SimpleDyanmoDB.debug.xcconfig */,
+				9FBFB528DC5A2DDFDDF16D54 /* Pods-SimpleDyanmoDB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		01D36DD930FAED819645EFB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				883599752537214BBC686231 /* libPods-SimpleDyanmoDB.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9AA157D1C0EBCC600CC9DD6 = {
+			isa = PBXGroup;
+			children = (
+				E9AA15881C0EBCC600CC9DD6 /* SimpleDyanmoDB */,
+				E9AA159D1C0EBCC600CC9DD6 /* SimpleDyanmoDBTests */,
+				E9AA15A81C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests */,
+				E9AA15871C0EBCC600CC9DD6 /* Products */,
+				002E720B1DE04D8CC5AA5BE8 /* Pods */,
+				01D36DD930FAED819645EFB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9AA15871C0EBCC600CC9DD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA15861C0EBCC600CC9DD6 /* SimpleDyanmoDB.app */,
+				E9AA159A1C0EBCC600CC9DD6 /* SimpleDyanmoDBTests.xctest */,
+				E9AA15A51C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9AA15881C0EBCC600CC9DD6 /* SimpleDyanmoDB */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA15891C0EBCC600CC9DD6 /* AppDelegate.swift */,
+				E9AA15BF1C0EC37900CC9DD6 /* SimpleDynamoDB-Bridging-Header.h */,
+				E9AA158B1C0EBCC600CC9DD6 /* ViewController.swift */,
+				E9AA15B91C0EBFA700CC9DD6 /* AddViewController.swift */,
+				E9AA15B71C0EBF8E00CC9DD6 /* RowCell.swift */,
+				E9AA15BB1C0EBFB700CC9DD6 /* Constants.swift */,
+				E9AA15BD1C0EBFD900CC9DD6 /* DynamoDBMapper.swift */,
+				E9AA158D1C0EBCC600CC9DD6 /* Main.storyboard */,
+				E9AA15901C0EBCC600CC9DD6 /* Assets.xcassets */,
+				E9AA15921C0EBCC600CC9DD6 /* LaunchScreen.storyboard */,
+				E9AA15951C0EBCC600CC9DD6 /* Info.plist */,
+			);
+			path = SimpleDyanmoDB;
+			sourceTree = "<group>";
+		};
+		E9AA159D1C0EBCC600CC9DD6 /* SimpleDyanmoDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA159E1C0EBCC600CC9DD6 /* SimpleDyanmoDBTests.swift */,
+				E9AA15A01C0EBCC600CC9DD6 /* Info.plist */,
+			);
+			path = SimpleDyanmoDBTests;
+			sourceTree = "<group>";
+		};
+		E9AA15A81C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA15A91C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests.swift */,
+				E9AA15AB1C0EBCC600CC9DD6 /* Info.plist */,
+			);
+			path = SimpleDyanmoDBUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9AA15851C0EBCC600CC9DD6 /* SimpleDyanmoDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9AA15AE1C0EBCC600CC9DD6 /* Build configuration list for PBXNativeTarget "SimpleDyanmoDB" */;
+			buildPhases = (
+				CF4151806F90205CEAA77D18 /* Check Pods Manifest.lock */,
+				E9AA15821C0EBCC600CC9DD6 /* Sources */,
+				E9AA15831C0EBCC600CC9DD6 /* Frameworks */,
+				E9AA15841C0EBCC600CC9DD6 /* Resources */,
+				11E6405B02AB4B35C7FAF932 /* Embed Pods Frameworks */,
+				323B4C2399104A1DA77892E2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleDyanmoDB;
+			productName = SimpleDyanmoDB;
+			productReference = E9AA15861C0EBCC600CC9DD6 /* SimpleDyanmoDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9AA15991C0EBCC600CC9DD6 /* SimpleDyanmoDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9AA15B11C0EBCC600CC9DD6 /* Build configuration list for PBXNativeTarget "SimpleDyanmoDBTests" */;
+			buildPhases = (
+				E9AA15961C0EBCC600CC9DD6 /* Sources */,
+				E9AA15971C0EBCC600CC9DD6 /* Frameworks */,
+				E9AA15981C0EBCC600CC9DD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9AA159C1C0EBCC600CC9DD6 /* PBXTargetDependency */,
+			);
+			name = SimpleDyanmoDBTests;
+			productName = SimpleDyanmoDBTests;
+			productReference = E9AA159A1C0EBCC600CC9DD6 /* SimpleDyanmoDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9AA15A41C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9AA15B41C0EBCC600CC9DD6 /* Build configuration list for PBXNativeTarget "SimpleDyanmoDBUITests" */;
+			buildPhases = (
+				E9AA15A11C0EBCC600CC9DD6 /* Sources */,
+				E9AA15A21C0EBCC600CC9DD6 /* Frameworks */,
+				E9AA15A31C0EBCC600CC9DD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9AA15A71C0EBCC600CC9DD6 /* PBXTargetDependency */,
+			);
+			name = SimpleDyanmoDBUITests;
+			productName = SimpleDyanmoDBUITests;
+			productReference = E9AA15A51C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9AA157E1C0EBCC600CC9DD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Phani;
+				TargetAttributes = {
+					E9AA15851C0EBCC600CC9DD6 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = J8BX9E89T6;
+					};
+					E9AA15991C0EBCC600CC9DD6 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = E9AA15851C0EBCC600CC9DD6;
+					};
+					E9AA15A41C0EBCC600CC9DD6 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = E9AA15851C0EBCC600CC9DD6;
+					};
+				};
+			};
+			buildConfigurationList = E9AA15811C0EBCC600CC9DD6 /* Build configuration list for PBXProject "SimpleDyanmoDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9AA157D1C0EBCC600CC9DD6;
+			productRefGroup = E9AA15871C0EBCC600CC9DD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9AA15851C0EBCC600CC9DD6 /* SimpleDyanmoDB */,
+				E9AA15991C0EBCC600CC9DD6 /* SimpleDyanmoDBTests */,
+				E9AA15A41C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9AA15841C0EBCC600CC9DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9AA15941C0EBCC600CC9DD6 /* LaunchScreen.storyboard in Resources */,
+				E9AA15911C0EBCC600CC9DD6 /* Assets.xcassets in Resources */,
+				E9AA158F1C0EBCC600CC9DD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AA15981C0EBCC600CC9DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AA15A31C0EBCC600CC9DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11E6405B02AB4B35C7FAF932 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleDyanmoDB/Pods-SimpleDyanmoDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		323B4C2399104A1DA77892E2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleDyanmoDB/Pods-SimpleDyanmoDB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF4151806F90205CEAA77D18 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9AA15821C0EBCC600CC9DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9AA15BC1C0EBFB700CC9DD6 /* Constants.swift in Sources */,
+				E9AA158C1C0EBCC600CC9DD6 /* ViewController.swift in Sources */,
+				E9AA15BE1C0EBFD900CC9DD6 /* DynamoDBMapper.swift in Sources */,
+				E9AA158A1C0EBCC600CC9DD6 /* AppDelegate.swift in Sources */,
+				E9AA15BA1C0EBFA700CC9DD6 /* AddViewController.swift in Sources */,
+				E9AA15B81C0EBF8E00CC9DD6 /* RowCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AA15961C0EBCC600CC9DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9AA159F1C0EBCC600CC9DD6 /* SimpleDyanmoDBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AA15A11C0EBCC600CC9DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9AA15AA1C0EBCC600CC9DD6 /* SimpleDyanmoDBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9AA159C1C0EBCC600CC9DD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9AA15851C0EBCC600CC9DD6 /* SimpleDyanmoDB */;
+			targetProxy = E9AA159B1C0EBCC600CC9DD6 /* PBXContainerItemProxy */;
+		};
+		E9AA15A71C0EBCC600CC9DD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9AA15851C0EBCC600CC9DD6 /* SimpleDyanmoDB */;
+			targetProxy = E9AA15A61C0EBCC600CC9DD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9AA158D1C0EBCC600CC9DD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9AA158E1C0EBCC600CC9DD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9AA15921C0EBCC600CC9DD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9AA15931C0EBCC600CC9DD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9AA15AC1C0EBCC600CC9DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9AA15AD1C0EBCC600CC9DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9AA15AF1C0EBCC600CC9DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CC7A3065CCE32F41EA20271 /* Pods-SimpleDyanmoDB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SimpleDyanmoDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobileways.SimpleDyanmoDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleDyanmoDB/SimpleDynamoDB-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		E9AA15B01C0EBCC600CC9DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FBFB528DC5A2DDFDDF16D54 /* Pods-SimpleDyanmoDB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SimpleDyanmoDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobileways.SimpleDyanmoDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleDyanmoDB/SimpleDynamoDB-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		E9AA15B21C0EBCC600CC9DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleDyanmoDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobileways.SimpleDyanmoDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleDyanmoDB.app/SimpleDyanmoDB";
+			};
+			name = Debug;
+		};
+		E9AA15B31C0EBCC600CC9DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleDyanmoDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobileways.SimpleDyanmoDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleDyanmoDB.app/SimpleDyanmoDB";
+			};
+			name = Release;
+		};
+		E9AA15B51C0EBCC600CC9DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SimpleDyanmoDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobileways.SimpleDyanmoDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SimpleDyanmoDB;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E9AA15B61C0EBCC600CC9DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SimpleDyanmoDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobileways.SimpleDyanmoDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SimpleDyanmoDB;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9AA15811C0EBCC600CC9DD6 /* Build configuration list for PBXProject "SimpleDyanmoDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9AA15AC1C0EBCC600CC9DD6 /* Debug */,
+				E9AA15AD1C0EBCC600CC9DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9AA15AE1C0EBCC600CC9DD6 /* Build configuration list for PBXNativeTarget "SimpleDyanmoDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9AA15AF1C0EBCC600CC9DD6 /* Debug */,
+				E9AA15B01C0EBCC600CC9DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9AA15B11C0EBCC600CC9DD6 /* Build configuration list for PBXNativeTarget "SimpleDyanmoDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9AA15B21C0EBCC600CC9DD6 /* Debug */,
+				E9AA15B31C0EBCC600CC9DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9AA15B41C0EBCC600CC9DD6 /* Build configuration list for PBXNativeTarget "SimpleDyanmoDBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9AA15B51C0EBCC600CC9DD6 /* Debug */,
+				E9AA15B61C0EBCC600CC9DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9AA157E1C0EBCC600CC9DD6 /* Project object */;
+}
