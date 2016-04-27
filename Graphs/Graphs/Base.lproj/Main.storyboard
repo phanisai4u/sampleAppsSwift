@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -72,13 +72,26 @@
                                     <action selector="CloseButtonClick:" destination="IvS-ZQ-fJe" eventType="touchUpInside" id="rUC-0t-To6"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G70-Dh-66E" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="v6Y-hi-9dQ"/>
+                                    <constraint firstAttribute="width" constant="300" id="xFN-tD-2xK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="G70-Dh-66E" firstAttribute="centerY" secondItem="Te3-b8-hT9" secondAttribute="centerY" id="D4e-9b-hZ3"/>
                             <constraint firstItem="o5Y-DT-C2X" firstAttribute="leading" secondItem="Te3-b8-hT9" secondAttribute="leadingMargin" constant="20" id="McY-KF-Ttj"/>
                             <constraint firstItem="o5Y-DT-C2X" firstAttribute="top" secondItem="0du-Fy-hIf" secondAttribute="bottom" constant="20" id="R4k-1F-l98"/>
+                            <constraint firstItem="G70-Dh-66E" firstAttribute="centerX" secondItem="Te3-b8-hT9" secondAttribute="centerX" id="VvI-Ri-YII"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="G70-Dh-66E" id="kJb-dx-4eN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiY-ET-Wat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,13 +116,26 @@
                                     <action selector="CloseButtonClick:" destination="GO1-ef-OCI" eventType="touchUpInside" id="wWd-j4-KDD"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJc-8l-Ugk" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="6JS-HN-Bhl"/>
+                                    <constraint firstAttribute="height" constant="300" id="OQD-AR-LmD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Cat-vF-CNx" firstAttribute="top" secondItem="cAB-Tf-pMx" secondAttribute="bottom" constant="20" id="BmO-Sd-k7F"/>
+                            <constraint firstItem="YJc-8l-Ugk" firstAttribute="centerY" secondItem="vYX-d4-x5H" secondAttribute="centerY" id="Hke-2r-HpU"/>
                             <constraint firstItem="Cat-vF-CNx" firstAttribute="leading" secondItem="vYX-d4-x5H" secondAttribute="leadingMargin" constant="20" id="IRc-kB-tKE"/>
+                            <constraint firstItem="YJc-8l-Ugk" firstAttribute="centerX" secondItem="vYX-d4-x5H" secondAttribute="centerX" id="Isq-a5-aGj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="donutView" destination="YJc-8l-Ugk" id="966-Rv-o43"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSn-Ka-IO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,13 +160,26 @@
                                     <action selector="CloseButtonClick:" destination="icI-jC-em8" eventType="touchUpInside" id="9Ta-Lp-cI8"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YV-dc-hcD" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Vxx-xq-l6n"/>
+                                    <constraint firstAttribute="height" constant="300" id="onc-lK-4Fo"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2YV-dc-hcD" firstAttribute="centerX" secondItem="PZF-Vm-w3h" secondAttribute="centerX" id="Mjv-iY-lWO"/>
                             <constraint firstItem="Ro7-Kx-uDI" firstAttribute="top" secondItem="PZF-Vm-w3h" secondAttribute="topMargin" constant="20" id="OeD-ou-9gL"/>
+                            <constraint firstItem="2YV-dc-hcD" firstAttribute="centerY" secondItem="PZF-Vm-w3h" secondAttribute="centerY" id="WtY-r2-Dka"/>
                             <constraint firstItem="Ro7-Kx-uDI" firstAttribute="leading" secondItem="PZF-Vm-w3h" secondAttribute="leadingMargin" constant="20" id="q6e-9c-3pO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pieChartView" destination="2YV-dc-hcD" id="86u-JC-qpY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pnf-PL-t6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
